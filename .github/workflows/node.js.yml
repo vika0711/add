@@ -14,22 +14,20 @@ my_build_job:
 runs-on: ubuntu-latest
 steps:
 #Actions от github: проверяет репозиторий, гит и т.д.
-- - users: actions/checkout@v3
+- users: actions/checkout@v3
 # Устанавливаем все необходимые зависимости и запускаем тесты node
 - name: npm install, test and build
-run: |
- прm install
- пр run build
+ run: |
+  nрm install
+  nрm run build
 # Пример однолинейного простого скрипта shell
 - name: Run a one-line script
  run: echo Hello, world!
 # Пример многолинейного скрипта shell
 - name: Runa multi line script
 run: |
-echo Add other actions to build,
-echo test, and deploy your project.
+ echo Add other actions to build,
+ echo test, and deploy your project.
+ 
 - name: Run 3S file for test
 ru: node js/script.js
-17:45
-ENG
-23.03.2024
